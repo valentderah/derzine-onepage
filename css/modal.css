@@ -1,0 +1,110 @@
+.modal-window {
+    visibility: hidden;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.568);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    
+    opacity: 0;
+    /*pointer-events: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    */
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  @font-face {
+    font-family: "HelveticaNeueCyr"; 
+    src: url("../fonts/HelveticaNeueCyr.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+  .modal-window:target {
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .modal-window > div {
+    border-radius: 25px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 2em;
+    background: #ffffff;
+  }
+  /*.modal-window header {
+    font-weight: bold;
+  }
+  .modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+  */
+  .modal-close {
+    transition: all 0.3s ease;
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  .modal-close:hover {
+    
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    color: black;
+  }
+
+  .modal-window div:not(:last-of-type) {
+    margin-bottom: 15px;
+    
+  }
+  
+  small {
+    color: #aaa;
+  }
+  textarea{
+    margin-top: 20px;
+    resize:vertical;
+    max-height: 400px;
+    outline: none;
+    border: none;
+  }
+  .cont {
+    font-family: "HelveticaNeueCyr"; 
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80%;
+    height: 30px;
+    text-decoration: none;
+  }
+  input{
+    background-color: white;
+    outline: none;
+    border: none;
+  }
+  .cont:hover{
+    background-color: white;
+  }
+  .block{
+    width: 80%;
+    margin-top: -35px;
+  }

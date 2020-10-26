@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1200px) {
+
+    .header {
+        
+        width: 800px;
+    }
+
+    .card {
+        
+        width: 190px;
+    }
+
+    .proj {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    form{
+        text-align:left;
+    
+     
+        
+    }
+    
+    .header {
+        
+        width: 600px;
+    }
+
+    .card {
+        
+        width: 100px;
+    }
+
+    .proj {
+        width: 150px;
+        
+    }
+}
