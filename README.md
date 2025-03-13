@@ -17,7 +17,7 @@ DerZine. Одностраничник.
 
 ## Использование
 1. Копируете код
-2. В index.php меняете:
+2. В index.php меняете:<br>
 ```<?php $link_to_db = mysqli_connect('localhost','root','','data');```<br>
 на<br>
 ```<?php $link_to_db = mysqli_connect('#имя своего хоста','#имя пользователя бд','#пароль','имя бд');```<br>
